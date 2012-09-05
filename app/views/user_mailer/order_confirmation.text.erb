@@ -1,0 +1,21 @@
+Thank you for placing the order, <%= @order.firstname %> <%= @order.lastname %>
+===============================================
+
+Purchasing Information:
+-----------------------------------------------
+E-mail Address : <%= @order.email%>
+Billing Address :<%= @order.address%>
+Shipping Address :<%= @order.address%>
+<%@total_price = 0%>
+
+Order Summary :
+===============================================
+You placed an order for :
+
+<% @l = LineItem.find_all_by_order_id(@order.id)%>
+<% @l.each do |l|%>
+	<%= l.product.name %> 
+<% @price = (l.product.price) * (l.quantity)%>
+<% @total_price = @total_price + @price%>
+<%end%>
+ Order Grand Total : <%= number_to_currency(@total_price)%>

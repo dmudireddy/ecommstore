@@ -1,0 +1,10 @@
+<h1>Editing line_item</h1>
+
+<%= render 'form' %>
+
+<% if can? :update,@line_item%>
+<%= link_to 'Show', @line_item %> 
+<%end%>
+<% if can? :update,@line_item%>
+<%= link_to 'Back', line_items_path %>
+<%end%>

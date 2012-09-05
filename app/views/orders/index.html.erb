@@ -1,0 +1,38 @@
+<h1>Listing orders</h1>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Address</th>
+    <th>Email</th>
+    <th>Pay type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @orders.each do |order| %>
+  <tr>
+    <td><%= order.firstname %></td>
+    <td><%= order.lastname %></td>
+    <td><%= order.address %></td>
+    <td><%= order.email %></td>
+    <td><%= order.pay_type %></td>
+    <% if can? :update,@order%>
+    <td><%= link_to 'Show', order %></td>
+    <%end%>
+    <% if can? :update,@order%>
+    <td><%= link_to 'Edit', edit_order_path(order) %></td>
+    <%end%>
+    <% if can? :delete,@order%>
+    <td><%= link_to 'Destroy', order, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  <%end%>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<% if can? :create,@order%>
+<%= link_to 'New Order', new_order_path %>
+<%end%>

@@ -1,0 +1,10 @@
+<h1>Editing order</h1>
+
+<%= render 'form' %>
+
+<% if can? :update,@order%>
+<%= link_to 'Show', @order %> 
+<%end%>
+<% if can? :update,@order%>
+<%= link_to 'Back', orders_path %>
+<%end%>

@@ -1,0 +1,25 @@
+<<%= link_to '<<Back', products_path %>
+<div id = "show">
+	
+<p id="notice"><%= notice %></p>
+<table>
+<div id ="showname">
+<h3><%= @product.name %>  </h3>
+</div>
+<div id ="showimage">
+	<%= image_tag(@product.image,:size => "300x300")  %>
+</div>
+<div id ="showdesc">
+<p> <%= @product.desc %></p>
+</div>
+<div id ="showprice">
+<h2> <b>Price:</b><%= number_to_currency(@product.price) %></h2>
+</div>
+<div id ="showbutton">
+<%= button_to 'Add to cart',line_items_path(:product_id => @product) %>
+</div>
+</table>
+</div>
+
+
+

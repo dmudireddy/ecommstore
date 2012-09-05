@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Onlinestore</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="shell">
+<div id="header">
+<!-- <h1 id="logo"> <a>Leather online</a> </h1> -->
+<% if session[:cart_id].nil?  %>
+  <%@cart= Cart.create%>
+  <%session[:cart_id] = @cart.id%>
+  <div id="cart"><%= link_to " Your Shopping Cart", cart_path(session[:cart_id]) %>
+<% else%>
+<div id="cart"><%= link_to " Your Shopping Cart", cart_path(session[:cart_id]) %>
+	
+<div class="cl"> </div>
+
+<span>Items:<strong> <%= @count %></strong></span>
+<span>Cost:<strong><%= @total%></strong></span>
+<%end%>
+<span></div><div id="navigation">
+	<ul><li> <%= link_to "Store",products_path%></li> 
+		<li> <%= link_to "Home",home_index_path%></li>
+		<li> <%= link_to "Contact",home_index_path%></li>
+		<li> 
+  <% if user_signed_in? %>
+    Signed in as <%= current_user.email %>. Not you? <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+  <% else %>
+    <%= link_to "Sign up", new_user_registration_path %> <%= link_to "sign in", new_user_session_path %>
+  <% end %>
+</li>
+		</ul>
+</div>
+</div>
+<div id="main">
+
+<div class="cl"> 
+	</div>
+<%= yield %>
+</div>
+<!-- <div id="footer">
+	<p class="left">
+<a href="#">Home</a>
+<span>|</span>
+<a href="#">Support</a>
+<span>|</span>
+<a href="#">My Account</a>
+<span>|</span>
+<a href="#">The Store</a>
+<span>|</span>
+<a href="#">Contact</a>
+</p>
+<p class="right">
+	© 2012 OnlineStore. Design by 
+	</p>
+</div> -->
+</div>
+
+
+
+</body>
+</html>

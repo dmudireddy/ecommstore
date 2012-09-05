@@ -1,0 +1,9 @@
+<h1>Editing category</h1>
+
+<%= render 'form' %>
+<% if can? :update,@category%>
+<%= link_to 'Show', @category %> 
+<%end%>
+<% if can? :update,@category%>
+<%= link_to 'Back', categories_path %>
+<%end%>
