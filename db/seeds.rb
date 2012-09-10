@@ -13,6 +13,7 @@ Product.create(:name => 'LeatherJacket',
 :category_id => 6 )
 
 
+
 Product.create(:name => 'BISSELL Bagless Vacuum',
 :desc =>"BISSELL Zing Canister Bagless Vacuum, 10M2", 
 :image => '/vaccum.jpg',
