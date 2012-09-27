@@ -5,10 +5,10 @@ class ProductsController < ApplicationController
   def index
     
    if params[:search].present?
-        @products = Product.paginate(:per_page => 8, :page => params[:page]).find_all_by_name(params[:search])
+        @products = Product.paginate(:per_page => 12, :page => params[:page]).find_all_by_name(params[:search])
     else
    
-    @products = Product.paginate(:per_page => 8, :page => params[:page]).all
+    @products = Product.paginate(:per_page => 12, :page => params[:page]).all
      end
      
      # if params[:category].present?

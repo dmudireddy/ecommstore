@@ -11,6 +11,8 @@
  *= require_self
  *= require_tree .
  */
+
+
 * { padding:0; margin:0; outline:0; }
 body {
 	background-color:#ffffff;
@@ -61,11 +63,12 @@ a.cart-link { color:#fff; background-color:#ffffff; padding:0 0 0 32px; text-dec
 a.cart-link:hover { text-decoration: underline;}
 
 #sidebar { float:left; width:216px; }
-#content { float:right; width:734px;}
+#content { float:right; width:734px;height: 100%;}
+
 
 #main { padding:10px 0 0 0; }
 
-.box { padding:1px; border:solid 1px #dedede; margin-bottom:10px;}
+.box { padding:1px; border:solid 1px #dedede; margin-bottom:0px;}
 .box h2{ background:#7f7f7f; color:#fff; font-weight: normal; padding:0 5px; position:relative; height:27px; line-height:27px; }
 .box h2 span{ position:absolute; width:10px; height:5px; background-color:#ffffff; top:27px; right:10px; font-size:0; line-height:0;}
 .box-content { padding:5px;}
@@ -84,7 +87,7 @@ a.bul { background-color:#ffffff; padding-left:10px;}
 
 .search-submit { width:70px; background:#8b0000; border:0; color:#fff; height:27px; display:block; line-height:26px; cursor:pointer; margin:12px 0 10px 0;}
 
-.categories { min-height:383px; }
+.categories {height:450px;}
 .categories ul { list-style-type: none; font-size:13px;}
 .categories ul li{ border-bottom:dashed 1px #ccc; padding:5px 0;}
 .categories ul li.last{ border-bottom:0; padding-bottom:0;}
@@ -137,11 +140,6 @@ h3.ico1 { background-image:url(images/ico1.gif);}
 h3.ico2 { background-image:url(images/ico2.gif);}
 h3.ico3 { background-image:url(images/ico3.gif);}
 h3.ico4 { background-image:url(images/ico4.gif);}
-
-#footer { height:51px;  white-space:nowrap; line-height:50px; padding:0 15px; color:#7b7b7b; margin-top:10px; }
-#footer a{ color:#7b7b7b; text-decoration: none;}
-#footer a:hover{ color:#000;}
-#footer span{ padding:0 2px;}
 
 #show { float:right; width:900px;padding-top :40px;}
 #showimage{float:left; height:200px; width:480px;padding-top :30px;}

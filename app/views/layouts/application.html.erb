@@ -19,9 +19,8 @@
 	
 <div class="cl"> </div>
 
-<span>Items:<strong> <%= @count %></strong></span>
-<span>Cost:<strong><%= @total%></strong></span>
 <%end%>
+<%= render :partial => 'carts/shopcart' %>
 <span></div><div id="navigation">
 	<ul><li> <%= link_to "Store",products_path%></li> 
 		<li> <%= link_to "Home",home_index_path%></li>
@@ -42,7 +41,9 @@
 	</div>
 <%= yield %>
 </div>
- <div id="footer">
+
+
+<!-- <div id ="footer">
 	<p class="left">
 <a href="#">Home</a>
 <span>|</span>
@@ -55,12 +56,11 @@
 <a href="#">Contact</a>
 </p>
 <p class="right">
-	© 2012 OnlineStore. Design by 
+	© 2012 OnlineStore.
 	</p>
-</div> 
-</div>
-
-
-
+</div> --> 
 </body>
+
+ 
+
 </html>

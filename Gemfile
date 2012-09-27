@@ -8,7 +8,6 @@ gem 'cancan'
 
 gem 'will_paginate'
 gem 'devise'
-gem 'json'
 group :development, :test do
   gem 'sqlite3'
   

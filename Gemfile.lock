@@ -143,7 +143,6 @@ DEPENDENCIES
   devise
   heroku
   jquery-rails
-  json
   pg
   rails (= 3.2.7)
   rvm

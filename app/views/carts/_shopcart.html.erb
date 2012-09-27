@@ -1,0 +1,6 @@
+
+<% @current_cart = current_cart %>
+<% @items = item(@current_cart)%>
+<% @total = total(@current_cart)%>
+<span>Cost:<strong><%= @total%></strong></span> 
+<span>Items:<strong> <%= @items %></strong></span>
