@@ -3,13 +3,14 @@ class ProductsController < ApplicationController
   # GET /products.json
    load_and_authorize_resource
   def index
+     @products = Product.paginate(:per_page => 8, :page => params[:page]).search(params[:search])
     
-   if params[:search].present?
-        @products = Product.paginate(:per_page => 12, :page => params[:page]).find_all_by_name(params[:search])
-    else
-   
-    @products = Product.paginate(:per_page => 12, :page => params[:page]).all
-     end
+   # if params[:search].present?
+        # @products = Product.paginate(:per_page => 12, :page => params[:page]).find_all_by_name(params[:search])
+    # else
+#    
+    # @products = Product.paginate(:per_page => 12, :page => params[:page]).all
+     # end
      
      # if params[:category].present?
 #        
