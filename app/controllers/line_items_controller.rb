@@ -81,12 +81,12 @@ class LineItemsController < ApplicationController
   # DELETE /line_items/1
   # DELETE /line_items/1.json
   def destroy
-     authorize! :delete, @line_items
+     # authorize! :delete, @line_items
     @line_item = LineItem.find(params[:id])
     @line_item.destroy
 
     respond_to do |format|
-      format.html { redirect_to line_items_url }
+      format.html { redirect_to products_url, :notice => 'Item can been deleted from the cart' }
       format.json { head :no_content }
     end
   end

@@ -87,7 +87,7 @@ class CartsController < ApplicationController
     @cart.destroy
 
     respond_to do |format|
-      format.html { redirect_to carts_url }
+      format.html { redirect_to products_url, :notice => ' Your cart has been emptied' }
       format.json { head :no_content }
     end
   end
