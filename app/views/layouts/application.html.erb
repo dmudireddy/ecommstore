@@ -10,16 +10,16 @@
 	<div class="shell">
 <div id="header">
 <!-- <h1 id="logo"> <a>Leather online</a> </h1> -->
-<% if session[:cart_id].nil?  %>
+<!-- <% if session[:cart_id].nil?  %>
   <%@cart= Cart.create%>
   <%session[:cart_id] = @cart.id%>
   <div id="cart"><%= link_to " Your Shopping Cart", cart_path(session[:cart_id]) %>
 <% else%>
 <div id="cart"><%= link_to " Your Shopping Cart", cart_path(session[:cart_id]) %>
-	
-<div class="cl"> </div>
+<%end%>	
+<div class="cl"> </div> -->
 
-<%end%>
+
 <%= render :partial => 'carts/shopcart' %>
 <span></div><div id="navigation">
 	<ul><li> <%= link_to "Store",products_path%></li> 

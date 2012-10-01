@@ -1,4 +1,11 @@
-
+<% if session[:cart_id].nil?  %>
+  <%@cart= Cart.create%>
+  <%session[:cart_id] = @cart.id%>
+  <div id="cart"><%= link_to " Your Shopping Cart", cart_path(session[:cart_id]) %>
+<% else%>
+<div id="cart"><%= link_to " Your Shopping Cart", cart_path(session[:cart_id]) %>
+<%end%>	
+<div class="cl"> </div>
 <% @current_cart = current_cart %>
 <% @items = item(@current_cart)%>
 <% @total = (total(@current_cart))*100.to_i/100.0 %>
