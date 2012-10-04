@@ -10,7 +10,7 @@ gem 'will_paginate'
 gem 'devise'
 group :development, :test do
   gem 'sqlite3'
-  
+  gem 'jquery-rails'
   gem 'rvm'
 end
 group :production do

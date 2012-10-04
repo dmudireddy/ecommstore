@@ -1,8 +1,11 @@
 
 <div id = "content">
 	<p id="notice"><%= notice %></p>
-	<%= will_paginate @products if @products.respond_to? :total_pages %>
-<div class="products">
+	<%= will_paginate @products if @products.respond_to? :total_pages  %>
+	<div class="products">
+		<%= render "products" %>
+	</div>
+<!-- <div class="products">
 <div class="cl"> </div>
 <ul>
 	<% @products.each do |product|%>
@@ -19,17 +22,10 @@
 			<%= link_to ' Delete  | ', product, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
 			<%end%>
 		</h3>
-
-	</div>
-	
+	</div>	
 </li>
 <%end%>
- 
-</ul>
-
-
-</div>
- </div>
+</ul></div></div> -->
   
 <div id="sidebar">
 	<div class = "box search">

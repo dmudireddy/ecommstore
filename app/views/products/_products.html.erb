@@ -1,0 +1,21 @@
+
+<div class="cl"> </div>
+<ul>
+	<% @products.each do |product|%>
+<li>
+
+<%= image_tag(product.image,:size => "150x150")  %>
+
+<div class="product-info">
+	<h3 align="center"> <%= link_to truncate(product.name), product%> 
+		<% if can? :update,product%>
+		<%= link_to '| Edit |', edit_product_path(product) %>
+		<%end%>
+		<% if can? :destroy,product%>
+			<%= link_to ' Delete  | ', product, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+			<%end%>
+		</h3>
+	</div>	
+</li>
+<%end%>
+</ul></div>
