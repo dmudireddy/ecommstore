@@ -23,9 +23,9 @@ class ProductsController < ApplicationController
     @categories = Category.all
 
     respond_to do |format|
-      format.html # index.html.erb
+       format.html # index.html.erb
       format.json { render :json => @products }
-      format.js
+       format.js
     end
   end
 

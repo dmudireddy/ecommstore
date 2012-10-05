@@ -1,43 +1,22 @@
-
+<div>
 <div id = "content">
 	<p id="notice"><%= notice %></p>
-	<%= will_paginate @products if @products.respond_to? :total_pages  %>
-	<div class="products">
-		<%= render "products" %>
+	<div class= "products">
+		<%= render :partial => "products"%>	
+</div>
 	</div>
-<!-- <div class="products">
-<div class="cl"> </div>
-<ul>
-	<% @products.each do |product|%>
-<li>
 
-<%= image_tag(product.image,:size => "150x150")  %>
-
-<div class="product-info">
-	<h3 align="center"> <%= link_to truncate(product.name), product%> 
-		<% if can? :update,product%>
-		<%= link_to '| Edit |', edit_product_path(product) %>
-		<%end%>
-		<% if can? :destroy,product%>
-			<%= link_to ' Delete  | ', product, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
-			<%end%>
-		</h3>
-	</div>	
-</li>
-<%end%>
-</ul></div></div> -->
-  
 <div id="sidebar">
 	<div class = "box search">
 		<h2>Search by<span></span></h2>		
 		<div class="box-content">
-			 <form>
+	 <%= form_tag products_path, :method => :get, :remote => true  do %>
 			<%= label_tag "Keyword"%>	
 <%=text_field_tag :search,params[:search],:class=> 'field'%>
-
- 	<%=submit_tag "Search", :name => nil%>  
-    </form>
-		</div>
+ 	<%=submit_tag "Search", :name => nil %>  
+    <%end%>
+   
+		</div> 
 	</div>
 <div class="box categories">
 <h2>Categories<span></span></h2>
@@ -45,9 +24,9 @@
 <% categories = Category.all %>
     <% categories.each do |category| %> 
     <ul>
-    	<%= link_to category.name , {:controller => "categories" , :action => "show" , :id => category.id }  %> 
-    </ul>
-			
+    	<%= link_to category.name ,{:controller => "categories" , :action => "show" , :id => category.id },:remote => true%> 
+    </ul>			
 			<%end%>
+</div>
 </div>
 </div>

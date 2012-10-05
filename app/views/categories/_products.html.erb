@@ -1,4 +1,7 @@
-<%= will_paginate @products if @products.respond_to? :total_pages  %>
+<h3>
+  <%= link_to @category.name, @category , :remote => true %>
+</h3>
+<% @products = @category.products %>
 <div class="cl"> </div>
 <ul>
 	<% @products.each do |product|%>

@@ -9,19 +9,10 @@
 <body>
 	<div class="shell">
 <div id="header">
-<!-- <h1 id="logo"> <a>Leather online</a> </h1> -->
-<!-- <% if session[:cart_id].nil?  %>
-  <%@cart= Cart.create%>
-  <%session[:cart_id] = @cart.id%>
-  <div id="cart"><%= link_to " Your Shopping Cart", cart_path(session[:cart_id]) %>
-<% else%>
-<div id="cart"><%= link_to " Your Shopping Cart", cart_path(session[:cart_id]) %>
-<%end%>	
-<div class="cl"> </div> -->
-
-
 <%= render :partial => 'carts/shopcart' %>
-<span></div><div id="navigation">
+
+</div>
+	<div id="navigation">
 	<ul><li> <%= link_to "Store",products_path%></li> 
 		<li> <%= link_to "Home",home_index_path%></li>
 		
@@ -37,8 +28,7 @@
 </div>
 <div id="main">
 
-<div class="cl"> 
-	</div>
+<div class="cl"> </div>
 <%= yield %>
 </div>
 

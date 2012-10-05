@@ -1,0 +1,52 @@
+<fieldset>
+
+<table id = "shopping-bar">
+<tbody>
+<tr class="bag-bar" >
+
+<th class="prod-description" scope="col">Product Description</th>
+<th class="prod-price" scope="col" >Price</th>
+<th class="prod-quantity" scope="col">Quantity</th>
+<th class="prod-total" scope="col">Total</th>
+<th class="prod-actions" scope="col">Actions</th>
+</tr>
+
+<% @cart.line_items.each do |item|%>
+
+<tr >	
+<td class="prod-description" scope="row" >
+<div class = "item-thumb"><%= image_tag(item.product.image,:size => "50x50")  %> </div>	
+	<ul>
+		<li> <%= link_to truncate(item.product.name) ,item.product %></li>
+		<li> Brand : </li></ul>	
+	</td>
+	<td class="prod-price" scope="row" align="center"> <%= content_tag(:p, number_to_currency(item.product.price))%></td>
+	<td class="prod-quantity" scope="row" align="center"><%= item.quantity %> </td>
+	<td class="prod-total" scope="row" align="center"><%= number_to_currency(litotal(item))%></td>
+	<td class="prod-actions" scope="row" align="center">
+		<ul>
+			<li><%= link_to 'Edit this item', product_path(item.product.id) %> </li>
+			<li><%= link_to 'Remove', line_item_path(item.id) ,:method => :delete %></li>
+		</ul>
+	</td>
+</tr>
+<%end%>
+</tbody>
+</table>
+</fieldset>
+
+<fieldset id = "charge">
+
+<div id="charge-container" align="right">
+<ul id="charges">
+<li id="subtotal"><b>Subtotal: </b><%=number_to_currency(subtotal(@cart))%></li>
+<li id="shipping"><b>Estimated Shipping: </b> <%=number_to_currency(shipping(@cart))%></li>
+<li id="tax"><b>Tax: </b> <%=number_to_currency(tax(@cart))%></li>
+<li id="total"><b>Total: </b> <%=number_to_currency(total(@cart))%></li>
+
+
+<%= button_to "Checkout", new_order_path, :method => :get%>
+<%= button_to "Empty Cart", @cart, :method => :delete, :confirm =>"Are you sure?"%>
+</ul>
+</div>
+</fieldset>

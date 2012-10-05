@@ -9,7 +9,7 @@
 <% @current_cart = current_cart %>
 <% @items = item(@current_cart)%>
 <% @total = (total(@current_cart))*100.to_i/100.0 %>
-<span>Cost:<strong><%= number_to_currency(@total)%></strong></span> 
+<span>Cost:<strong><%=  number_to_currency(@total)%></strong></span> 
 <span>Items:<strong> <%= @items %></strong></span>
 
 
