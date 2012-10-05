@@ -1,4 +1,0 @@
-<!-- <span>Items:<strong> <%= @count %></strong></span>
-<span>Cost:<strong><%= @total%></strong></span> -->
-
-<%= @count %>
