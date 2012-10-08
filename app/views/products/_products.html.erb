@@ -1,5 +1,6 @@
 <%= will_paginate @products if @products.respond_to? :total_pages  %>
 <div class="cl"> </div>
+
 <ul>
 	<% @products.each do |product|%>
 <li>
