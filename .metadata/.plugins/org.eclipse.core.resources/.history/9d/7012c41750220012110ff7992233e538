@@ -1,0 +1,14 @@
+require 'spec_helper'
+describe Post do
+it "create new post", :js => true do
+  visit "/"
+  click_on 'New Post'
+  fill_in 'Title',:with => "title1"
+  fill_in 'Body',:with => "body1"
+  click_on 'Create Post'
+  page.should have_content('Post was successfully created')
+  
+end
+
+end
+

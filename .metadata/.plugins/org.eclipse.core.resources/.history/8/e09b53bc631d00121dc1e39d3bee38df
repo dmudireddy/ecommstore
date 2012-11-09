@@ -1,0 +1,13 @@
+module PostsHelper
+   def distance_of_time_in_words_or_absolute(date)
+     
+    created_date_string = date.to_s 
+ timenow = Time.now 
+ if date - timenow
+   
+ end
+
+ 
+    
+  end
+end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Author Name:</b>
+  <%= @author.name %>
+</p>
+<p>
+  <b>Blogs of <%= @author.name %></b>
+  <% @blogs.each do |blog|%>
+<h3> Blog title : <%= @blog.title %> </h3>  
+<h3> Blog body : <%= @blog.blog %> </h3> 
+<h3> Blog author : <%= @blog.author_id %> </h3> 
+  <%end%>
+</p>
+
+
+
+<%= link_to 'Edit', edit_author_path(@author) %> |
+<%= link_to 'Back', authors_path %>

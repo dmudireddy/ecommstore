@@ -1,0 +1,16 @@
+require 'spec_helper'
+
+describe Post do
+  
+
+    it "check posts page" do
+      visit posts_path
+      click_link "New Post"
+      fill_in "Title", :with => "Capybara methods"
+      fill_in "Body", :with => "This is Cool"
+      click_button("Create Post")
+      page.should have_content("Capybara methods")
+    end
+    
+  
+end

@@ -1,0 +1,33 @@
+require 'spec_helper'
+
+describe Post do
+  before  do
+    @valid_attributes = 
+    {
+      :title => "Hello World",
+      :body => "Goood Morning"
+    }
+  end
+  it "should create a new post given valid attributes" do
+    lambda{
+      Post.create!(@valid_attributes)
+    }
+  .should change(Post, :count).by(1)
+    
+  end
+  describe Posttitle do
+     before  do
+   
+   @post = Post.create(:title => "Hello World",
+      :body => "Goood Morning")
+    
+    
+  end
+    
+    it " should have the correct title " do
+    @post.title.should eql "Hello World"
+  end
+  end
+  
+  
+end

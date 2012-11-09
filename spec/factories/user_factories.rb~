@@ -1,0 +1,4 @@
+Factory.define :user do |u|
+u.email "rorcool422@gmail.com"
+u.encrypted_password "secret422"
+end

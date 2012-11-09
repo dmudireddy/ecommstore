@@ -1,0 +1,15 @@
+require 'spec_helper'
+
+describe Post do
+  before  do
+    @valid_attributes = 
+    {
+      :title => "Hello World",
+      :body => "Goood Morning"
+    }
+  end
+  it "should create a new post given valid attributes" do
+   Post.create!(@valid_attributes).should change(Post, :count)
+    
+  end
+end

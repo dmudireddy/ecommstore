@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servers>
+<server host="0.0.0.0" port="3000" project="/home/divya/Documents/Aptana Studio 3 Workspace/ajaxdemo" type="org.radrails.rails.railsServer">
+<name>ajaxdemo</name>
+</server>
+<server host="0.0.0.0" port="3000" project="/home/divya/Documents/AptanaStudio3Workspace" type="org.radrails.rails.railsServer">
+<name>leatherstore</name>
+</server>
+<server host="0.0.0.0" port="3000" type="org.radrails.rails.railsServer">
+<name>storeForTesting</name>
+</server>
+<server host="0.0.0.0" port="3000" project="/home/divya/Documents/AptanaStudio3Workspace/ecommappforTest" type="org.radrails.rails.railsServer">
+<name>ecommappforTest</name>
+</server>
+<server host="0.0.0.0" port="3000" project="/home/divya/Documents/Aptana/blog" type="org.radrails.rails.railsServer">
+<name>blog</name>
+</server>
+<server host="0.0.0.0" port="3000" project="/home/divya/Documents/Aptana/rspec_book" type="org.radrails.rails.railsServer">
+<name>codebreaker</name>
+</server>
+<server host="0.0.0.0" port="3000" project="/home/divya/Documents/Aptana/joins&amp;include" type="org.radrails.rails.railsServer">
+<name>joins&amp;include</name>
+</server>
+<server host="0.0.0.0" port="3000" type="org.radrails.rails.railsServer">
+<name>blog2</name>
+</server>
+<server host="0.0.0.0" port="3000" project="/home/divya/Documents/Aptana/blog/blog3" type="org.radrails.rails.railsServer">
+<name>blog3</name>
+</server>
+<server host="0.0.0.0" port="3000" project="/home/divya/Documents/Aptana/blog/blogcapybara" type="org.radrails.rails.railsServer">
+<name>blogcapybara</name>
+</server>
+</servers>

@@ -1,0 +1,15 @@
+module PostsHelper
+   def distance_of_time_in_words_or_absolute(date)
+     
+    date1 = date.to_s 
+ timenow = Time.now 
+ date2 = timenow.to_s
+ 
+ if date - timenow
+   
+ end
+
+ 
+    
+  end
+end

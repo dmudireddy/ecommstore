@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @post.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
+
+<h2> Comments:</h2>
+<%= timenow = DateTime.now %>
+<%= timenow_string = timenow.to_s %>
+<% for c in @post.comments %>
+<h3> Time now : <%= Time.parse(timenow_string) %></h3>
+<%  c.created_at.to_s %>
+<h3> CREATED AT : <%=  c.created_at %></h3>
+<h3>Email : <%= c.emailid %></h3>
+<h3>Comment : <%= c.comment %></h3>
+<h3>Date : <%= c.created_at %></h3>
+
+</br>
+<% end %>
+
+
+<%= form_tag :controller => "comments" , :action => "create", :id => @post.id %>
+<%= text_area "comment", "comment" %>
+<%= text_field "comment", "emailid", "size" => 20 %>
+<%= submit_tag "Submit" %>
+
+
+
+

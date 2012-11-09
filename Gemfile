@@ -13,6 +13,11 @@ group :development, :test do
   gem 'sqlite3'
   gem 'jquery-rails'
   gem 'rvm'
+  gem "rspec-rails"
+  gem 'selenium-webdriver'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'factory_girl_rails'
 end
 group :production do
   gem 'pg'

@@ -1,0 +1,27 @@
+module PostsHelper
+   def distance(date)
+  #date2 is Timenow   
+    string1 = date.to_s 
+ timenow = Time.now.utc 
+ string2 = timenow.to_s
+ date1 = string1[8,2]
+ date2 = string2[8,2]
+ time1 = string1[11,2]
+  time2 = string2[11,2]
+ mynum = time1.to_i 
+# if mynum <20
+  # mynum = 33
+# end
+  # @msg = date1 + date2 + time1 + time2 + "#{mynum}"
+  
+ # if date2 - date1 < 1
+   # @msg = "about #{time2} hrs"
+#    
+# else
+# @msg = "wrong"
+#     
+  # end
+  # @msg
+  end
+  
+end

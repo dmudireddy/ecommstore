@@ -1,0 +1,7 @@
+require 'spec_helper'
+
+describe Post do
+ 
+ it "instantiation correctly "
+ Post.new.should_be_an_instance_of(Post)
+end

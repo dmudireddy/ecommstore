@@ -1,6 +1,0 @@
- <form>
-			<%= label_tag "Keyword"%>	
-<%=text_field_tag :search,params[:search],:class=> 'field'%>
-
- 	<%=submit_tag "Search", :name => nil, :remote => true%>  
-    </form>

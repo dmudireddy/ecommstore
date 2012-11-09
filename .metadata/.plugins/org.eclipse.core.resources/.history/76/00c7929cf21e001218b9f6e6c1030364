@@ -1,0 +1,12 @@
+class CreateImages < ActiveRecord::Migration
+  def change
+    create_table :images do |t|
+      t.string :blog_id
+      t.integer :
+      t.string :image_file_path
+      t.string :
+
+      t.timestamps
+    end
+  end
+end
