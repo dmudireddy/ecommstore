@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="25" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="744" width="1200" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -12,11 +12,14 @@
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="140" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="82" y="30"/>
-<coolItem id="com.aptana.ui.globalActionSet" itemType="typeToolBarContribution" x="188" y="30"/>
+<coolItem id="com.aptana.ui.globalActionSet" itemType="typeToolBarContribution" x="48" y="30"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="96" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="84" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.aptana.editor.text" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.erb.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.ruby" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -25,12 +28,39 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="com.aptana.editor.ruby" name="posts_controller.rb" partName="posts_controller.rb" title="posts_controller.rb" tooltip="/home/divya/Documents/Aptana Studio 3 Workspace/twitterapp/app/controllers/posts_controller.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/divya/Documents/Aptana%20Studio%203%20Workspace/twitterapp/app/controllers/posts_controller.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="86" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="routes.rb" partName="routes.rb" title="routes.rb" tooltip="/home/divya/Documents/Aptana Studio 3 Workspace/twitterapp/config/routes.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/divya/Documents/Aptana%20Studio%203%20Workspace/twitterapp/config/routes.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="134" selectionTopPixel="573"/>
+</editor>
+<editor id="com.aptana.editor.text" name="development.log" partName="development.log" title="development.log" tooltip="/home/divya/Documents/Aptana Studio 3 Workspace/twitterapp/log/development.log" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/divya/Documents/Aptana%20Studio%203%20Workspace/twitterapp/log/development.log"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="285"/>
+</editor>
+<editor activePart="true" focus="true" id="com.aptana.editor.erb.html" name="index.html.erb" partName="index.html.erb" title="index.html.erb" tooltip="/home/divya/Documents/Aptana Studio 3 Workspace/twitterapp/app/views/posts/index.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/divya/Documents/Aptana%20Studio%203%20Workspace/twitterapp/app/views/posts/index.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="19" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
+<view id="com.aptana.terminal.views.terminal:13b0726bc5d" partName="ecommapp">
+<viewState>
+<title>ecommapp</title>
+<workingDirectory>/home/divya/Documents/Aptana Studio 3 Workspace/ecommapp</workingDirectory>
+</viewState>
+</view>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
@@ -51,19 +81,19 @@
 <viewState/>
 </view>
 <view id="com.aptana.explorer.view" partName="App Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="ajaxdemo">
-<project name="ajaxdemo">
-<selection>
-<element path="/ajaxdemo"/>
-</selection>
-</project>
+<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="ajaxdemo"/>
+</view>
+<view id="com.aptana.terminal.views.terminal:ecommapp" partName="ecommapp">
+<viewState>
+<title>ecommapp</title>
+<workingDirectory>/home/divya/Documents/Aptana Studio 3 Workspace/ecommapp</workingDirectory>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.aptana.explorer.view" activePerspective="com.aptana.ui.WebPerspective">
+<perspectives activePart="com.aptana.editor.erb.html" activePerspective="com.aptana.ui.WebPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Web"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -108,6 +138,8 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="com.aptana.terminal.views.terminal"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
+<view id="com.aptana.terminal.views.terminal:ecommapp"/>
+<view id="com.aptana.terminal.views.terminal:13b0726bc5d"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="com.aptana.samples.ui.SamplesView"/>
 <view id="com.aptana.snippets.ui.views.SnippetsView"/>
@@ -115,7 +147,7 @@
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder activePageID="com.aptana.explorer.view" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
 <page content="com.aptana.explorer.view" label="App Explorer"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="com.aptana.ui.io.remoteview" label="LabelNotFound"/>
@@ -134,16 +166,20 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.19983137" ratioLeft="237" ratioRight="949" relationship="2" relative="left"/>
 <info folder="true" part="terminalArea" ratio="0.7488922" ratioLeft="507" ratioRight="170" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="com.aptana.terminal.views.terminal:ecommapp" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.aptana.terminal.views.terminal" label="Terminal"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="com.aptana.terminal.views.terminal:ecommapp" label="ecommapp"/>
+<page content="com.aptana.terminal.views.terminal:13b0726bc5d" label="ecommapp"/>
 <page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -164,7 +200,56 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/home/divya/Documents/Aptana%20Studio%203%20Workspace/twitterapp/app/controllers/posts_controller.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/home/divya/Documents/Aptana%20Studio%203%20Workspace/twitterapp/config/routes.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/home/divya/Documents/Aptana%20Studio%203%20Workspace/twitterapp/app/views/posts/index.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.text" uri="file:/home/divya/Documents/Aptana%20Studio%203%20Workspace/twitterapp/log/development.log"/>
+</editors>
+<item historyLabel="posts_controller.rb" index="0">
+<position info="not_deleted" x="86" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="1">
+<position info="not_deleted" x="134" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position/>
+</item>
+<item historyLabel="routes.rb" index="1">
+<position info="not_deleted" x="134" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position/>
+</item>
+<item historyLabel="routes.rb" index="1">
+<position info="not_deleted" x="134" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="development.log" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="1">
+<position info="not_deleted" x="134" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="development.log" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="development.log" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="index.html.erb" index="2">
+<position info="not_deleted" x="19" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -180,5 +265,18 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="index.html.erb" tooltip="/home/divya/Documents/Aptana Studio 3 Workspace/twitterapp/app/views/posts/index.html.erb">
+<persistable uri="file:/home/divya/Documents/Aptana%20Studio%203%20Workspace/twitterapp/app/views/posts/index.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.text" name="development.log" tooltip="/home/divya/Documents/Aptana Studio 3 Workspace/twitterapp/log/development.log">
+<persistable uri="file:/home/divya/Documents/Aptana%20Studio%203%20Workspace/twitterapp/log/development.log"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="routes.rb" tooltip="/home/divya/Documents/Aptana Studio 3 Workspace/twitterapp/config/routes.rb">
+<persistable uri="file:/home/divya/Documents/Aptana%20Studio%203%20Workspace/twitterapp/config/routes.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="posts_controller.rb" tooltip="/home/divya/Documents/Aptana Studio 3 Workspace/twitterapp/app/controllers/posts_controller.rb">
+<persistable uri="file:/home/divya/Documents/Aptana%20Studio%203%20Workspace/twitterapp/app/controllers/posts_controller.rb"/>
+</file>
+</mruList>
 </workbench>

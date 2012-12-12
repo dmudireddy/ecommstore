@@ -45,7 +45,10 @@
 <li id="total"><b>Total: </b> <%=number_to_currency(total(@cart))%></li>
 
 
-<%= button_to "Checkout", new_order_path, :method => :get%>
+
+<%= button_to "Checkout", @cart.paypal_url(products_url) %>
+
+
 <%= button_to "Empty Cart", @cart, :method => :delete, :confirm =>"Are you sure?"%>
 </ul>
 </div>
